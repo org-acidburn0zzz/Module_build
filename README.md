@@ -35,12 +35,19 @@ sudo ln -s /usr/src/Linux /lib/modules/`uname -r`/build
 cd Linux
 
 Prepare the kernel with the current kernel config from the running system
+
 (current config available on /boot/)
-make mrproper
+
+make mrproper 
+
 wget https://raw.githubusercontent.com/sparkysbc/Module_build/master/.config
+
 (current config available on /boot/)
+
 Download the module symbols of the current kernel.
+
 wget https://github.com/sparkysbc/Module_build/blob/master/Module.symvers
+
 make modules_prepare
 
 #*******************************                                                                          
