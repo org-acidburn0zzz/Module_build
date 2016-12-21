@@ -41,7 +41,7 @@ cd /usr/src
 
 git clone https://github.com/sparkysbc/Linux.git
 
-sudo ln -s /usr/src/Linux /lib/modules/'uname -r'/build
+sudo ln -s /usr/src/Linux /lib/modules/`uname -r`/build
 
 cd Linux
 
