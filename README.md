@@ -38,8 +38,11 @@ root@sparky#df -h
 Download linux kernel source, this is needed to compile the driver module.
 
 cd /usr/src
+
 git clone https://github.com/sparkysbc/Linux.git
+
 sudo ln -s /usr/src/Linux /lib/modules/`uname -r`/build
+
 cd Linux
 
 Prepare the kernel with the current kernel config from the running system
