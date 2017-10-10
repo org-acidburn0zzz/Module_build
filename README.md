@@ -47,9 +47,9 @@ cd Linux
 
 Prepare the kernel with the current kernel config from the running system
 
-(current config available on /boot/)
-
 make mrproper 
+
+or download the same from below links
 
 wget https://raw.githubusercontent.com/sparkysbc/Module_build/master/.config
 
@@ -57,7 +57,7 @@ wget https://raw.githubusercontent.com/sparkysbc/Module_build/master/.config
 
 Download the module symbols of the current kernel.
 
-wget https://github.com/sparkysbc/Module_build/blob/master/Module.symvers
+wget https://raw.githubusercontent.com/sparkysbc/Module_build/master/Module.symvers
 
 make modules_prepare
 
