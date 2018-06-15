@@ -33,13 +33,17 @@ The filesystem on /dev/mmcblk0p2 is now  xxxxxx blocks long
 root@sparky#df -h
 
 #***********************************************
-
+Refer Module-build-sparky.pdf
 
 Download linux kernel source, this is needed to compile the driver module.
 
 cd /usr/src
 
 git clone https://github.com/sparkysbc/Linux.git
+
+sudo rm /lib/modules/`uname -r`/build
+
+sudo rmi /lib/modules/`uname -r`/source
 
 sudo ln -s /usr/src/Linux /lib/modules/`uname -r`/build
 
